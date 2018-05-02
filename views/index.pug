@@ -1,0 +1,22 @@
+extends layout
+
+block content
+  .row
+    #aze.col-md-5(onclick="Clicker()")
+    .col-md-3
+      p Votre score est de :
+      input#score(type="text" value="0" disabled="disabled")
+      p Votre pouvoir est de :
+      input#power(type="text" value="1" disabled="disabled")
+      p Votre meilleur score est de :
+      input#bestscore(type="text" value="0" disabled="disabled")
+      p Votre production est de :
+      input#auto(type="text"  value="0" disabled="disabled")
+    .col-md-3
+      h1 Achete un bonus  🍖 <br> <br>
+      #up.col-md-12(onclick="Power()")
+        p  Puissance💪 
+      #up2.col-md-12(onclick="Usine()")
+        p Usine production🏭
+      #sell.col-md-12(onclick="SellAll()")
+        p Vendre gateau💰
